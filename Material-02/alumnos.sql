@@ -18,17 +18,12 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
---
--- Base de datos: `jvh-tutoriales`
---
-
--- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `alumno`
+-- Estructura de tabla para la tabla `alumnos`
 --
 
-CREATE TABLE `alumno` (
+CREATE TABLE `alumnos` (
   `cod_estudiante` int(11) NOT NULL,
   `dni` int(11) NOT NULL,
   `nombres` varchar(20) NOT NULL,
@@ -36,13 +31,14 @@ CREATE TABLE `alumno` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `alumno`
+-- Volcado de datos para la tabla `alumnos`
 --
 
-INSERT INTO `alumno` (`cod_estudiante`, `dni`, `nombres`, `apellidos`) VALUES
-(101, 75854549, 'Juan Carlos', 'Herrera Sanches'),
+INSERT INTO `alumnos` (`cod_estudiante`, `dni`, `nombres`, `apellidos`) VALUES
+(101, 75854549, 'Dennis', 'Candia Sanches'),
 (103, 75854551, 'Jimena', 'Sandobal Gutierre'),
-(105, 75854553, 'jvh turoriales', 'suscribete y dale lik');
+(105, 75854553, 'Gerardo', 'Quispe Huaman'),
+(106, 23454553, 'Manuel', 'Herrera Lopez');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
